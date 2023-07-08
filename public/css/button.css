@@ -1,0 +1,21 @@
+.button {
+    user-select: none;
+    border-radius: 20px;
+    background-color: var(--c1);
+    box-shadow: 5px 5px 4px var(--c4), -5px 5px 4px var(--c4), 5px -5px 4px var(--c4), -5px -5px 4px var(--c4);
+    transition: 0.5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--c2);
+    color: var(--c4);
+}
+
+.button:active {
+    cursor: pointer;
+    transition: 0.1s;
+    box-shadow: 5px 5px 6px black, -5px 5px 6px black, 5px -5px 6px black, -5px -5px 6px black;
+    background-color: var(--c2);
+    color: var(--c4);
+}

@@ -1,0 +1,271 @@
+#infoBar {
+    position: fixed;
+    left: 10px;
+    top: 170px;
+    background-color: snow;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    width: 250px;
+}
+
+#submitBar {
+    position: fixed;
+    left: 90px;
+    top: 500px;
+    border-radius: 30px;
+    display: flex;
+    background-color: snow;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: 150px;
+}
+
+#submitB {
+    padding: 10px;
+    width: 85%;
+    font-size: 16pt;
+}
+
+#submitBSection {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.capsul {
+    display: flex;
+    width: 260px;
+    margin: 5px;
+    font-size: 14pt;
+    justify-content: space-between;
+}
+
+.capsul label {
+    width: 220px;
+    margin-right: 1em;
+}
+
+#timerCapsul {
+    margin-bottom: 20px;
+    font-size: 18pt;
+    text-align: center;
+    font-weight: bold;
+    border: black solid;
+    border-radius: 20px;
+    padding: 20px 50px;
+    /* white-space: pre-line; */
+}
+
+#timerBar {
+    font-size: 25pt;
+}
+
+.testInfo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#quesContainer {
+    width: 100%;
+    /* height: 100vh; */
+    /* height: max-content; */
+    background-color: snow;
+    border-radius: 30px;
+    margin: 30px 20px 30px 350px;
+    padding: 40px;
+    font-size: 24pt;
+}
+
+#quesTitleAndMark {
+    display: flex;
+    justify-content: space-between;
+}
+
+#textQuesSec {
+    margin: 20px;
+    font-size: 20pt;
+}
+
+#choicesSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 18pt;
+    margin: 30px;
+}
+
+.radWthLab {
+    margin: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.radWthLab label {
+    margin-left: 10px;
+}
+
+.radWthLab input {
+    margin-top: 9px;
+}
+
+#pageMovCtrl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemCtrl {
+    display: flex;
+}
+
+.movTo img {
+    height: 40px;
+    width: 40px;
+}
+
+.movTo img:hover {
+    cursor: pointer;
+}
+
+.movTo {
+    padding: 0 5px;
+    margin-top: 10px;
+}
+
+#list {
+    display: flex;
+}
+
+.pageNumber {
+    margin: 0 10px;
+}
+
+.pageNumber span {
+    color: silver;
+}
+
+.pageNumber span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: gray;
+    font-size: larger;
+}
+
+
+/* 
+
+
+
+
+ */
+
+.choice {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.choice input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(192, 190, 190);
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.choice:hover input~.checkmark {
+    background-color: rgb(61, 60, 60);
+}
+
+.choice:hover input:checked~.checkmark {
+    background-color: rgb(17, 22, 163);
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.choice input:checked~.checkmark {
+    background-color: #61b5f9;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.choice input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.choice .checkmark:after {
+    left: 7px;
+    top: 7px;
+    width: 10px;
+    height: 10px;
+    border: solid white;
+    border-radius: 50%;
+    border-width: 3px;
+    background-color: white;
+}
+
+.passed {
+    background-color: #007d0c !important;
+}
+
+.passed:hover {
+    background-color: #034109 !important;
+}
+
+#duration {
+    width: 170px;
+}
+
+#startDate {
+    width: 170px;
+    margin-left: 31px;
+}
+
+#addTc {
+    width: max-content;
+    text-align: center;
+}
+
+#tcList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

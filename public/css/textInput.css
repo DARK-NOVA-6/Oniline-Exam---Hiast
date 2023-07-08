@@ -1,0 +1,193 @@
+.textInput {
+    box-shadow: 0 5px 5px var(--c4), -5px 0 5px var(--c4);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 0 4px;
+    margin: 15px 0;
+}
+
+.textInput label {
+    user-select: none;
+    position: absolute;
+    transition: 0.8s;
+    font-size: 14pt;
+    left: 9px;
+    top: 6px;
+}
+
+.textInput label i {
+    transition: 0.8s;
+}
+
+.textInput label span {
+    transition: 0.8s;
+    font-size: 0;
+    padding: 2px 2px 0 2px;
+}
+
+.textInput input {
+    border-radius: 20px;
+    font-size: 14pt;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.textInput input [type="password"] {
+    input-security: none;
+}
+
+.passwordStrength1 {
+    background-color: red;
+    transition: 0.5s;
+    width: 25%;
+    border-radius: 3px;
+}
+
+.passwordStrength2 {
+    background-color: orange;
+    transition: 0.5s;
+    width: 50%;
+    border-radius: 3px;
+}
+
+.passwordStrength3 {
+    background-color: green;
+    transition: 0.5s;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.textInput input:not([value=""])~label,
+.textInput input:focus~label,
+.textInput input:not([value=""])~label span {
+    top: -12px;
+    left: 12px;
+    font-size: 10pt;
+    padding: 2px 2px 0 2px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.textInput input:focus~label i {
+    font-size: 0;
+}
+
+.textInput input:focus~label span {
+    font-size: inherit;
+}
+
+.textInput img {
+    /*  */
+    user-select: none;
+    /*  */
+    width: 25px;
+    width: 25px;
+    margin-top: 4px;
+    transition: 1s;
+}
+
+.textInput .tips {
+    background-color: silver;
+    border-radius: 30px;
+    padding: 10px;
+    display: none;
+    width: max-content;
+    position: absolute;
+    left: 98%;
+    top: -35px;
+}
+
+.textInput img:hover~.tips,
+.tips:hover,
+.tipsHover {
+    display: inline !important;
+    animation: growup 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes growup {
+    0% {
+        transform: translateY(50%) translateX(-50%) scaleX(0%) scaleY(0%);
+    }
+}
+
+.textInput .tips::before {
+    height: 0;
+    width: 0;
+    content: "";
+    border-left: 10px silver solid;
+    border-top: 10px silver solid;
+    border-right: 10px transparent solid;
+    border-bottom: 10px transparent solid;
+    transform: rotate(38deg);
+    position: absolute;
+    left: -6px;
+    bottom: -10px;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+.autocompleteList {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -15px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid black;
+    border-bottom: 0;
+}
+
+.autocompleteList div {
+    cursor: pointer;
+    text-overflow: ellipsis;
+    width: inherit;
+    height: inherit;
+    border-bottom: 1px solid black;
+    padding: 3px 10px;
+}
+
+.autocompleteLineBackg0 {
+    background-color: snow;
+}
+
+.autocompleteLineBackg1 {
+    background-color: silver;
+}
+
+.autocompleteList div:hover {
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
+.autocompleteActiveLine {
+    background-color: rgb(71, 71, 71) !important;
+    color: white;
+}
+
+.autocompleteActiveLine:hover {
+    background-color: rgb(71, 71, 71) !important;
+    color: white;
+}
+
+#passwordProgBar {
+    height: 3px;
+    width: 0%;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.textArea {
+    border-radius: 20px;
+    border: none;
+    font-size: 14pt;
+    color: black;
+    resize: none;
+    overflow-y: hidden;
+    outline: none;
+}

@@ -1,0 +1,203 @@
+/* :root {
+	--c1: #593954;
+	--c2: #013440;
+	--c3: #026873;
+	--c4: #038C8C;
+	--c5: #038C7F;
+} */
+
+:root {
+    --c1: #52BBF7;
+    --c2: #77A9C5;
+    --c3: #3881AB;
+    --c4: #0A2738;
+    --c5: #295E7D;
+    --c6: #287a9b;
+}
+
+.body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: var(--c4);
+}
+
+.header {
+    background: rgb(85, 193, 233);
+    background: linear-gradient(141deg, rgba(85, 193, 233, 1) 0%, rgba(34, 102, 136, 1) 34%, rgba(23, 68, 129, 1) 91%, rgba(6, 47, 113, 1) 100%);
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 0 10px var(--c1);
+    border-radius: 0 0 40px 40px;
+    z-index: 100;
+}
+
+#logo {
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 1px -1px 2px black;
+    text-decoration: none;
+    font-size: 18pt;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoimg {
+    user-select: none;
+    height: 100%;
+    width: 100%;
+    transition: 0.1s;
+}
+
+#optionContainer {
+    position: relative;
+    padding-right: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    height: inherit;
+}
+
+#logInOutContainer {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    transition: 0.1s;
+    bottom: 4.9px;
+}
+
+#logInOut {
+    font-size: 18pt;
+    text-align: center;
+    padding: 4px 15px;
+    height: 30px;
+    width: 125px;
+}
+
+.logIn {
+    user-select: none;
+    border-radius: 20px;
+    background-color: var(--c6);
+    box-shadow: 0px 5px 8px var(--c4), 0px -5px 8px var(--c4);
+    transition: 0.5s;
+    color: white;
+}
+
+.logIn:hover {
+    cursor: pointer;
+    background-color: var(--c4);
+    color: white;
+}
+
+.noLogIn {
+    user-select: none;
+    border-radius: 20px;
+    background-color: var(--c4);
+    box-shadow: 0px 5px 8px var(--c4), 0px -5px 8px var(--c4);
+    color: white;
+    transition: 0.5s;
+}
+
+.noLogIn:hover {
+    cursor: pointer;
+    background-color: var(--c6);
+    color: white;
+}
+
+#accountPhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#profileLink {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#accountDetails {
+    font-weight: bold;
+    font-size: 18pt;
+    padding: 0 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#languageSelector {
+    display: flex;
+    position: relative;
+    background-color: var(--c5);
+    box-shadow: 0px 3px 8px var(--c4), 0px -3px 8px var(--c4);
+    padding: 5px;
+    border-radius: 10px;
+    height: min-content;
+    width: min-content;
+    transition: 0.1s;
+}
+
+.lSelect {
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 4px 8px;
+    margin: 0 5px;
+    color: white;
+    box-shadow: none !important;
+    border: 2px solid var(--c4);
+    opacity: 0.5;
+}
+
+.lSelect:hover {
+    opacity: 1 !important;
+}
+
+.lSelected {
+    color: var(--c4);
+    border: 0.5px solid var(--c4) !important;
+    opacity: 1 !important;
+}
+
+.backgroundSection {
+    background-color: rgb(7, 36, 57);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer {
+    z-index: 99;
+    display: flex;
+    position: static;
+    background-color: var(--c2);
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    text-align: center;
+}
+
+#footerTitle {
+    font-size: 24pt;
+    font-weight: bold;
+    color: rgb(212, 212, 59);
+    text-shadow: 1px 1px 2px black, 1px -1px 2px black;
+}
+
+#footerSubTitle {
+    font-size: 19pt;
+}
+
+#footerSubTitle b {
+    font-size: 21pt;
+    font-family: cursive;
+}

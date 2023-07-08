@@ -1,0 +1,68 @@
+#marginContainer {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0 10% 0;
+    width: max-content;
+    background-color: var(--c2);
+    padding: 3%;
+    border-radius: 60px 40px;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.buttonContainer {
+    padding: 2% 0 0 0;
+}
+
+.profileEditButton {
+    font-weight: bold;
+    padding: 15px 60px;
+    font-size: 18pt;
+}
+
+.bgColor {
+    background-color: var(--c5);
+    padding: 1%;
+    border-radius: 40px;
+}
+
+.column {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    list-style-type: none;
+    color: black;
+    user-select: none;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--c5);
+    margin: 0 10px;
+}
+
+.column li {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+    background-color: var(--c3);
+}
+
+.placeholder {
+    background-color: var(--c1) !important;
+    border-radius: 20px;
+}
+
+.newPhotoButton {
+    text-align: center;
+    font-size: 16pt;
+    padding: 4px 0;
+}

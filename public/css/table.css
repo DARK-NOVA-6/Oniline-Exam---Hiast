@@ -1,0 +1,271 @@
+    .containerWithDrawer {
+        display: flex;
+        flex-direction: column;
+        width: calc(80% - 135px);
+        margin-left: 121px;
+        height: max-content;
+        position: relative;
+        padding: 10%;
+    }
+    
+    #container {
+        box-sizing: border-box;
+        background-color: var(--c5);
+        box-shadow: 5px 5px 10px var(--c1), -5px 5px 10px var(--c1), 5px -5px 10px var(--c1), -5px -5px 10px var(--c1);
+        border-radius: 20px 70px;
+        padding: 50px;
+    }
+    
+    .tableContainer {
+        margin: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .tableContainer form {
+        position: absolute;
+        top: 28px;
+    }
+    
+    .table {
+        table-layout: fixed;
+        font-size: 16pt;
+        width: 100%;
+        border-collapse: collapse;
+        transition: 1s;
+    }
+    
+    .table thead {
+        user-select: none;
+        position: relative;
+        background-color: var(--c4);
+        color: white;
+    }
+    
+    .table tfoot {
+        user-select: none;
+        background-color: rgb(0, 56, 82);
+        color: white;
+    }
+    
+    .table tbody {
+        background-color: var(--c2);
+    }
+    
+    .table thead tr> :first-child {
+        border-top-left-radius: 40px;
+    }
+    
+    .table thead tr> :last-child {
+        border-top-right-radius: 40px;
+    }
+    
+    .table tfoot tr> :first-child {
+        border-bottom-left-radius: 40px;
+    }
+    
+    .table tfoot tr> :last-child {
+        border-bottom-right-radius: 40px;
+    }
+    
+    .table tbody> :nth-child(even) {
+        background-color: var(--c3);
+    }
+    
+    .table tbody tr:hover {
+        background-color: var(--c1);
+    }
+    
+    .table th,
+    .table td {
+        max-width: 0;
+        overflow: hidden;
+        padding: 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    
+    .table td:last-child {
+        overflow: visible;
+    }
+    
+    .table td img {
+        user-select: none;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .table td {
+        transition: 0.5s;
+    }
+    
+    .table caption {
+        user-select: none;
+        background-color: var(--c1);
+        font-size: 18pt;
+        font-weight: bold;
+        width: min-content;
+        white-space: nowrap;
+        height: 20px;
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+    }
+    
+    .topOption img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .topOption {
+        user-select: none;
+        top: 30px;
+        border-radius: 50% 50% 0 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-color: var(--c4);
+    }
+    
+    .collapse {
+        right: 120px;
+    }
+    
+    .destroy {
+        right: 40px;
+    }
+    
+    .add {
+        right: 80px;
+    }
+    
+    .searchField {
+        bottom: 15px;
+    }
+    
+    .topOption:hover {
+        background-color: var(--c3);
+        cursor: pointer;
+    }
+    
+    .collapseCells {
+        font-size: 0 !important;
+        padding: 0 !important;
+        color: transparent;
+    }
+    
+    .subMenu {
+        position: absolute;
+        right: -120px;
+        top: 0;
+        height: max-content;
+        width: 120px;
+        z-index: 10;
+    }
+    
+    .optionContainer {
+        height: max-content;
+        width: max-content;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    .option {
+        padding: 5px 10px;
+    }
+    
+    .option:hover {
+        background-color: silver;
+    }
+    
+    .subMenu::before {
+        position: absolute;
+        left: -10px;
+        top: 15px;
+        content: '';
+        height: 0;
+        width: 0;
+        border-top: solid 5px white;
+        border-right: solid 5px white;
+        border-bottom: solid 5px transparent;
+        border-left: solid 5px transparent;
+    }
+    
+    .relInsideTd {
+        position: relative;
+    }
+    
+    .rowWithSpaceBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .rowContainer {
+        display: flex;
+        align-items: center;
+    }
+    
+    .numberContainer {
+        margin: 0 10px;
+    }
+    
+    .selctor {
+        margin: 10px;
+        font-size: 14pt;
+        padding: 5px 15px 5px 20px;
+        appearance: none;
+        background-image: url(../icon/arrowDown.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        border-radius: 0 50px 50px 0 !important;
+    }
+    
+    .rowCountContainer {
+        margin-left: 10px;
+    }
+    
+    .rowCountContainer i {
+        font-weight: bold;
+    }
+    
+    .notClickable {
+        position: absolute;
+    }
+    /*     
+
+
+
+    
+     */
+    /*     
+    
+    
+    
+    
+     */
+    
+    html {
+        overflow-y: scroll;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background-color: var(--c1);
+        border-radius: 30px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background-color: var(--c6);
+    }
+    
+    html::-webkit-scrollbar {
+        position: fixed;
+        width: 15px;
+    }
